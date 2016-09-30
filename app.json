@@ -1,0 +1,14 @@
+{
+  "name": "heroku-redirect",
+  "env": {
+    "LOCATION": {
+      "description": "The location where all incoming requests to this app are redirected to, for example \"https://www.example.com\".",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/ryandotsmith/nginx-buildpack.git"
+    }
+  ]
+}
