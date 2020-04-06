@@ -27,6 +27,6 @@ http {
   server {
     listen <%= ENV["PORT"] %> default_server;
     server_name _;
-    return 301 <%= ENV["LOCATION"] %>$request_uri;
+    return 301 <%= ENV["LOCATION"] %><% if ENV["PRESERVE_PATH"] %>$request_uri<% end %>;
   }
 }
