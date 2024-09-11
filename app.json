@@ -1,6 +1,6 @@
 {
   "name": "heroku-redirect",
-  "stack": "heroku-20",
+  "stack": "heroku-24",
   "env": {
     "LOCATION": {
       "description": "The location where all incoming requests to this app are redirected to, for example \"https://www.example.com\".",
